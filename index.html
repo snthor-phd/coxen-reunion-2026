@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coxen Reunion 2026 · Gatlinburg, TN</title>
+<meta name="description" content="Schedule, sleeping arrangements, and cabin info for the Coxen family reunion — July 30 to August 3, 2026, Gatlinburg, Tennessee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700;900&family=Karla:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pine:#1e3328;
+  --pine-deep:#132218;
+  --smoke:#dfe6df;
+  --mist:#6e8b7e;
+  --cedar:#8a5a33;
+  --cedar-soft:#b07c4f;
+  --card:#f7f5ee;
+  --ink:#22302a;
+  --rule:#c3cec5;
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  font-family:'Karla',system-ui,sans-serif;
+  background:var(--smoke);
+  color:var(--ink);
+  line-height:1.55;
+}
+a{color:var(--cedar)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--cedar);outline-offset:2px}
+
+/* ---------- header ---------- */
+header{
+  background:
+    linear-gradient(160deg, var(--pine-deep) 0%, var(--pine) 55%, #2c4a38 100%);
+  color:#eef3ee;
+  padding:3.2rem 1.25rem 2.6rem;
+  position:relative;
+  overflow:hidden;
+}
+header::after{ /* layered smoky ridgeline */
+  content:"";
+  position:absolute;left:0;right:0;bottom:0;height:120px;
+  background:
+    radial-gradient(120% 90px at 15% 100%, rgba(223,230,223,.16) 49%, transparent 50%),
+    radial-gradient(140% 110px at 55% 100%, rgba(223,230,223,.10) 49%, transparent 50%),
+    radial-gradient(130% 95px at 90% 100%, rgba(223,230,223,.14) 49%, transparent 50%);
+  pointer-events:none;
+}
+.eyebrow{
+  font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;
+  color:#b9cbb9;font-weight:700;
+}
+h1{
+  font-family:'Bitter',serif;font-weight:900;
+  font-size:clamp(2.2rem,6vw,3.6rem);
+  line-height:1.05;margin:.5rem 0 .8rem;
+}
+.dates{
+  font-family:'Bitter',serif;font-weight:700;
+  font-size:clamp(1rem,2.6vw,1.25rem);color:#d8c6ae;
+}
+.header-inner,main{max-width:1060px;margin:0 auto}
+nav{
+  position:sticky;top:0;z-index:50;
+  background:var(--pine-deep);
+  display:flex;gap:.25rem;justify-content:center;flex-wrap:wrap;
+  padding:.4rem .5rem;
+  box-shadow:0 2px 10px rgba(19,34,24,.35);
+}
+nav a{
+  color:#dfe6df;text-decoration:none;font-weight:700;font-size:.9rem;
+  padding:.45rem .9rem;border-radius:999px;
+}
+nav a:hover{background:rgba(255,255,255,.12)}
+
+main{padding:2.4rem 1.25rem 4rem}
+section{margin-bottom:3.2rem}
+h2{
+  font-family:'Bitter',serif;font-weight:900;color:var(--pine);
+  font-size:clamp(1.5rem,4vw,2.1rem);
+  margin-bottom:.35rem;
+}
+.h2-sub{color:var(--mist);font-weight:600;margin-bottom:1.4rem}
+h2::after{
+  content:"";display:block;width:64px;height:4px;margin-top:.5rem;
+  background:var(--cedar);border-radius:2px;
+}
+
+/* ---------- cabin section ---------- */
+.cabin-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:1.25rem}
+@media (max-width:760px){.cabin-grid{grid-template-columns:1fr}}
+.cabin-card{
+  background:var(--card);border:1px solid var(--rule);
+  border-radius:var(--radius);padding:1.4rem 1.5rem;
+}
+.cabin-card h3{font-family:'Bitter',serif;color:var(--pine);font-size:1.1rem;margin-bottom:.6rem}
+.addr{
+  font-family:'Bitter',serif;font-weight:700;font-size:1.25rem;color:var(--pine);
+  line-height:1.35;margin-bottom:.9rem;
+}
+.btn{
+  display:inline-block;background:var(--cedar);color:#fff;text-decoration:none;
+  font-weight:700;padding:.55rem 1.1rem;border-radius:8px;margin:.15rem .35rem .15rem 0;
+}
+.btn:hover{background:var(--cedar-soft)}
+.btn.secondary{background:var(--pine)}
+.btn.secondary:hover{background:#2c4a38}
+.house-facts{list-style:none}
+.house-facts li{
+  padding:.4rem 0 .4rem 1.5rem;position:relative;border-bottom:1px dashed var(--rule);
+}
+.house-facts li:last-child{border-bottom:none}
+.house-facts li::before{
+  content:"◆";position:absolute;left:0;color:var(--cedar);font-size:.7rem;top:.62rem;
+}
+
+/* ---------- schedule ---------- */
+.days{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem}
+.day{
+  background:var(--card);border:1px solid var(--rule);
+  border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;
+}
+.day-head{
+  background:var(--pine);color:#eef3ee;padding:.7rem .9rem .6rem;
+}
+.day-head .dow{font-family:'Bitter',serif;font-weight:900;font-size:1.05rem;letter-spacing:.02em}
+.day-head .date{font-size:.8rem;color:#b9cbb9;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.day ul{list-style:none;padding:.7rem .9rem 1rem;flex:1}
+.day li{padding:.5rem 0;border-bottom:1px dashed var(--rule);font-size:.92rem}
+.day li:last-child{border-bottom:none}
+.time{
+  display:inline-block;font-weight:700;color:var(--cedar);
+  font-size:.78rem;letter-spacing:.05em;min-width:4.3em;
+}
+.tag{
+  display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.07em;
+  text-transform:uppercase;border-radius:4px;padding:.1rem .4rem;margin-left:.3rem;
+  vertical-align:1px;
+}
+.tag.meal{background:#e7dcc9;color:var(--cedar)}
+.tag.travel{background:#d5e0d8;color:var(--pine)}
+.tag.key{background:var(--pine);color:#eef3ee}
+.cook{color:var(--mist);font-weight:600}
+
+/* ---------- sleeping ---------- */
+.floor-label{
+  font-family:'Bitter',serif;font-weight:700;color:var(--mist);
+  text-transform:uppercase;letter-spacing:.18em;font-size:.85rem;
+  margin:1.8rem 0 .8rem;display:flex;align-items:center;gap:.7rem;
+}
+.floor-label::after{content:"";flex:1;height:1px;background:var(--rule)}
+.rooms{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.1rem}
+.room{
+  background:var(--card);border:1px solid var(--rule);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;
+}
+.room img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.room-body{padding:1rem 1.1rem 1.2rem;flex:1;display:flex;flex-direction:column;gap:.55rem}
+.room h3{font-family:'Bitter',serif;font-weight:900;color:var(--pine);font-size:1.12rem}
+.occupants{font-weight:700;font-size:1rem}
+.occupants span{color:var(--cedar)}
+.bath{font-size:.85rem;color:var(--mist);font-weight:600}
+.bath::before{content:"🛁 "}
+.logic{
+  margin-top:auto;
+  border-left:3px solid var(--cedar);
+  background:#efe9dc;
+  padding:.6rem .8rem;border-radius:0 8px 8px 0;
+  font-size:.85rem;font-style:italic;color:#4d4436;
+}
+.logic b{font-style:normal;color:var(--cedar);letter-spacing:.04em;font-size:.72rem;text-transform:uppercase}
+
+footer{
+  background:var(--pine-deep);color:#b9cbb9;text-align:center;
+  padding:1.6rem 1rem;font-size:.85rem;
+}
+footer a{color:#d8c6ae}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="eyebrow">Family Reunion · Smoky Mountains</div>
+    <h1>Coxen Reunion 2026</h1>
+    <div class="dates">Thursday, July 30 – Monday, August 3 · Gatlinburg, Tennessee</div>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <a href="#cabin">The Cabin</a>
+  <a href="#schedule">Schedule</a>
+  <a href="#sleeping">Sleeping</a>
+</nav>
+
+<main>
+
+<section id="cabin">
+  <h2>The Cabin</h2>
+  <p class="h2-sub">Home base for the long weekend</p>
+  <div class="cabin-grid">
+    <div class="cabin-card">
+      <h3>Where we're staying</h3>
+      <p class="addr">787 Mountain Stream Way<br>Gatlinburg, TN 37738</p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=787+Mountain+Stream+Way,+Gatlinburg,+TN+37738" target="_blank" rel="noopener">Open in Google Maps</a>
+      <a class="btn secondary" href="https://www.airbnb.com/l/dyZYVMih" target="_blank" rel="noopener">Join the trip on Airbnb</a>
+      <p style="margin-top:.9rem;font-size:.88rem;color:var(--mist)">
+        Check-in <strong>Thursday ~4:00 PM</strong> · Check-out <strong>Monday 10:00 AM</strong>
+      </p>
+    </div>
+    <div class="cabin-card">
+      <h3>Around the house</h3>
+      <ul class="house-facts">
+        <li>9 bedrooms across 3 floors</li>
+        <li>Main floor: kitchen &amp; general seating area</li>
+        <li>Bottom floor: pool table &amp; movie theater, hot tub nearby</li>
+        <li>Top floor: arcade</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <h2>Schedule</h2>
+  <p class="h2-sub">Every meal has a cook. Every flight has a time. Show up hungry.</p>
+  <div class="days">
+
+    <article class="day">
+      <div class="day-head">
+        <div class="dow">Thursday</div>
+        <div class="date">July 30</div>
+      </div>
+      <ul>
+        <li><span class="time">3:45 PM</span> Kyle, Dom &amp; Deanna land <span class="tag travel">arrival</span></li>
+        <li><span class="time">4:00 PM</span> Daniel &amp; Megan land <span class="tag travel">arrival</span></li>
+        <li><span class="time">4:00 PM</span> Cabin check-in <span class="tag key">key</span></li>
+        <li><span class="time">6:00 PM</span> Walking Taco Dinner <span class="tag meal">dinner</span><br><span class="cook">Bree cooks</span></li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="day-head">
+        <div class="dow">Friday</div>
+        <div class="date">July 31</div>
+      </div>
+      <ul>
+        <li><span class="time">9:00 AM</span> Breakfast Sandies <span class="tag meal">breakfast</span><br><span class="cook">Daniel</span></li>
+        <li><span class="time">1:00 PM</span> Ramen Lunch <span class="tag meal">lunch</span><br><span class="cook">Cam</span></li>
+        <li><span class="time">6:00 PM</span> Pizza Night <span class="tag meal">dinner</span><br><span class="cook">Marissa &amp; Steve T</span></li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="day-head">
+        <div class="dow">Saturday</div>
+        <div class="date">August 1</div>
+      </div>
+      <ul>
+        <li><span class="time">1:00 PM</span> Stuffed Pepper Lunch <span class="tag meal">lunch</span><br><span class="cook">Dom</span></li>
+        <li><span class="time">6:00 PM</span> Smoked Meats <span class="tag meal">dinner</span></li>
+        <li><span class="time">7:00 PM</span> Kyle's flight takes off <span class="tag travel">departure</span></li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="day-head">
+        <div class="dow">Sunday</div>
+        <div class="date">August 2</div>
+      </div>
+      <ul>
+        <li><span class="time">9:00 AM</span> Scott's Breakfast <span class="tag meal">breakfast</span><br><span class="cook">Scott</span></li>
+        <li><span class="time">6:00 PM</span> Leftovers + Charcuterie Board <span class="tag meal">dinner</span></li>
+      </ul>
+    </article>
+
+    <article class="day">
+      <div class="day-head">
+        <div class="dow">Monday</div>
+        <div class="date">August 3</div>
+      </div>
+      <ul>
+        <li><span class="time">10:00 AM</span> C H E C K &nbsp; O U T <span class="tag key">key</span></li>
+        <li><span class="time">1:54 PM</span> Daniel &amp; Megan's flight <span class="tag travel">departure</span></li>
+        <li><span class="time">4:20 PM</span> Dom &amp; Deanna's flight <span class="tag travel">departure</span></li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+<section id="sleeping">
+  <h2>Sleeping Arrangements</h2>
+  <p class="h2-sub">Nine rooms, three floors — assignments courtesy of Bree Logic™</p>
+
+  <div class="floor-label">Main Floor</div>
+  <div class="rooms">
+    <article class="room">
+      <img src="images/ox-king-suite.jpg" alt="Ox King Suite bedroom" loading="lazy">
+      <div class="room-body">
+        <h3>Ox King Suite</h3>
+        <p class="occupants"><span>Steve &amp; Deanna</span></p>
+        <p class="bath">Private bathroom</p>
+        <div class="logic"><b>Bree Logic</b><br>The only bedroom on the main floor, right next to the kitchen and seating area — easiest on Steve's hips, and puts them close to the grandbabies.</div>
+      </div>
+    </article>
+  </div>
+
+  <div class="floor-label">Bottom Floor · pool table, movie theater &amp; quieter evenings</div>
+  <div class="rooms">
+    <article class="room">
+      <img src="images/aspen-king.jpg" alt="Aspen King bedroom" loading="lazy">
+      <div class="room-body">
+        <h3>Aspen King</h3>
+        <p class="occupants"><span>Steve T &amp; Colleen</span></p>
+        <p class="bath">Shared bathroom with Go Queens</p>
+        <div class="logic"><b>Bree Logic</b><br>Quieter, and near a hot tub for Steve T. Shares a bathroom with two Thorsen kids.</div>
+      </div>
+    </article>
+    <article class="room">
+      <img src="images/go-queens.jpg" alt="Go Queens bedroom" loading="lazy">
+      <div class="room-body">
+        <h3>Go Queens</h3>
+        <p class="occupants"><span>Grace &amp; Bree</span></p>
+        <p class="bath">Shared bathroom with Aspen King</p>
+        <div class="logic"><b>Bree Logic</b><br>Bree and Grace share a room, and a bathroom with the Thorsen parents. A ground-floor room lets them retreat easily.</div>
+      </div>
+    </article>
+    <article class="room">
+      <img src="images/pier-king.jpg" alt="Pier King bedroom" loading="lazy">
+      <div class="room-body">
+        <h3>Pier King</h3>
+        <p class="occupants"><span>Scott &amp; Mollie</span> (+ babies)</p>
+        <p class="bath">Shared bathroom with World Map Queens</p>
+        <div class="logic"><b>Bree Logic</b><br>Scott and Mollie get their own room for them and the babies, sharing a bathroom with Uncle Daniel — the babies can wake up early with the other early risers.</div>
+      </div>
+    </article>
+    <article class="room">
+      <img src="images/world-map-queens.jpg" alt="World Map Queens bedroom" loading="lazy">
+      <div class="room-body">
+        <h3>World Map Queens</h3>
+        <p class="occupants"><span>Sav + Cam &amp; Paula</span></p>
+        <p class="bath">Shared bathroom with Pier King</p>
+        <div class="logic"><b>Bree Logic</b><br>Room to decompress, sharing a bathroom with the Scott-and-Mollie crew.</div>
+      </div>
+    </article>
+  </div>
+
+  <div class="floor-label">Top Floor · near the arcade, for the late-night crowd</div>
+  <div class="rooms">
+    <article class="room">
+      <img src="images/follow-your-heart-king.jpg" alt="Follow Your Heart King bedroom" loading="lazy">
+      <div class="room-body">
+        <h3>Follow Your Heart King</h3>
+        <p class="occupants"><span>Nicole &amp; John</span></p>
+        <p class="bath">Private bathroom</p>
+        <div class="logic"><b>Bree Logic</b><br>Nicole and John get a private bathroom; John can step away and decompress early while Nicole stays up for the late-night fun.</div>
+      </div>
+    </article>
+    <article class="room">
+      <img src="images/king-7.jpg" alt="King 7 bedroom" loading="lazy">
+      <div class="room-body">
+        <h3>King 7</h3>
+        <p class="occupants"><span>Daniel</span> (&amp; Megan)</p>
+        <p class="bath">Private bathroom</p>
+        <div class="logic"><b>Bree Logic</b><br>Near the arcade — ideal for late-night gaming with a private room to retreat to.</div>
+      </div>
+    </article>
+    <article class="room">
+      <img src="images/clock-king.jpg" alt="Clock King bedroom" loading="lazy">
+      <div class="room-body">
+        <h3>Clock King</h3>
+        <p class="occupants"><span>Marissa</span></p>
+        <p class="bath">"Own" bathroom — but it's the one the arcade uses</p>
+        <div class="logic"><b>Bree Logic</b><br>Puts Marissa in the middle of the action to lessen FOMO. As she's not a couple, she shares the general bathroom.</div>
+      </div>
+    </article>
+    <article class="room">
+      <img src="images/kayaking-racoons-king.jpg" alt="Kayaking Racoons King bedroom" loading="lazy">
+      <div class="room-body">
+        <h3>Kayaking Racoons King</h3>
+        <p class="occupants"><span>Dominque &amp; Kyle</span></p>
+        <p class="bath">Private bathroom</p>
+        <div class="logic"><b>Bree Logic</b><br>Dominque and Kyle get their own private bathroom; Kyle can step away and decompress early while Nique stays up for the late-night fun.</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Coxen Reunion · July 30 – August 3, 2026 · 787 Mountain Stream Way, Gatlinburg, TN
+  · <a href="https://www.airbnb.com/l/dyZYVMih" target="_blank" rel="noopener">Airbnb trip link</a>
+</footer>
+
+</body>
+</html>
